@@ -18,10 +18,23 @@ public class ReverseOrder {
 		sc.close();
 		return num;
 	}
+	public static void printArray(int num[]) {
+		for(int a: num )
+			System.out.print (a+ "  ");
+	}
+	
+	public static void printReverseArray(int num[]) {
+		System.out.println();
+		System.out.println("Reverse of Array ");
+		for(int i=num.length-1; i>=0; i--) 
+			System.out.print (num[i]+"  ");
+	} 
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		int arr[]=createArray();
+		printArray(arr);
+		printReverseArray(arr);
 	}
 
 }

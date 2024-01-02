@@ -9,8 +9,10 @@ public class DatatypeShort {
 		short result;
 		num1=2000;
 		num2=5000;
-		result=(short) (num1+num2);
+		result=  (short) (num1+num2);
 		System.out.println(result);
+		
+		System.out.println(num1+=num2);
 	}
 
 }
